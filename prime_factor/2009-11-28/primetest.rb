@@ -44,4 +44,8 @@ class PrimeFactorsTest < Test::Unit::TestCase
   def test_eight
     assert list(2,2,2) == generate(8)
   end
+
+  def test_nine
+    assert list(3,3) == generate(9)
+  end
 end
