@@ -32,4 +32,8 @@ class PrimeFactorsTest < Test::Unit::TestCase
   def test_three
     passert(3,3)
   end
+
+  def test_four
+    assert(list(2,2) == generate(4))
+  end
 end
