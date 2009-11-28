@@ -18,11 +18,11 @@ class PrimeFactorsTest < Test::Unit::TestCase
   end
 
   def passert(n, m)
-    assert(list(n) == generate(m))
+    assert list(n) == generate(m)
   end
 
   def test_one
-   assert(list == generate(1))
+   assert list == generate(1)
   end
 
   def test_two
@@ -34,6 +34,14 @@ class PrimeFactorsTest < Test::Unit::TestCase
   end
 
   def test_four
-    assert(list(2,2) == generate(4))
+    assert list(2,2) == generate(4)
+  end
+
+  def test_six
+    assert list(2,3) == generate(6)
+  end
+
+  def test_eight
+    assert list(2,2,2) == generate(8)
   end
 end
