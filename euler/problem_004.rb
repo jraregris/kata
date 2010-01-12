@@ -6,21 +6,14 @@
 
 # Find the largest palindrome made from the product of two 3-digit numbers.
 
-def palin?(n)
-  if n.to_s.reverse == n.to_s
-    return true
-  end
-  false
-end
+require 'lib/euler'
 
 pals = []
 
 (100..999).to_a.reverse.each do |i| 
   (100..999).to_a.reverse.each do |j|
- 
-
-    if palin?(i*j)
-      pals << i*j
+    if Euler.palin?(k=i*j)
+      pals << k
     end
   end
 end
