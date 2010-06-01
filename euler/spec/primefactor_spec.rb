@@ -14,7 +14,7 @@ describe PrimeFactor do
     f(8,[2]*3)
     f(9,[3]*2)
     f(10,[2,5])
-    f(12,[3,4])
+    f(12,[2,2,3])
   end
 end
 
