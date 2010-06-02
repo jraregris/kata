@@ -1,21 +1,16 @@
-$: << File.join(File.dirname(__FILE__), "/../lib")
-require 'spec'
+require 'spec_helper'
 require 'prime'
 
 describe Prime do
-  it "should return empty on 0" do
-    Prime.prime(0).should == []
-  end
-
-  it "should return 2 on 1" do
-    Prime.prime(1).should == [2]
-  end
-
-  it "should return 2,3 on 2" do
-    Prime.prime(2).should == [2,3]
-  end
-
-  it "should return 2,3,5 on 3" do
-    Prime.prime(4).should == [2,3,5]
-  end
+  
+  # N should return I
+  
+  match(0,[])
+  match(1,[2])
+  match(2,[2,3])
+  match(3,[2,3,5])
+  match(4,[2,3,5,7])
+  match(5,[2,3,5,7,11])
+  match(6,[2,3,5,7,11,13])
 end
+
