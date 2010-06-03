@@ -6,4 +6,5 @@
 
 require 'lib/euler'
 
-puts Euler.prime(10001)
+puts Euler.prime(10001).last
+
